@@ -1,1 +1,50 @@
+kuberneters having following structure 
+
+1.cluster
+2.nodes 
+3.pod
+4.container
+5.application
+
+docker have 
+*********
+1.cluster
+2.nodes
+3.container
+4.application
+
+Note: K8's don't know communicate with containers 
+it communicate with pods. 
+
+Components:
+=========
+Master Node :
+1. API cluster : it;s for communicating with cluster , it takes command executes and give output . 
+2. ETCD :its a DB of cluster , all the info will store here . 
+3. SCHEDULER:scheduler pod on worker node based on hardware resources . 
+4. CONTROLLER: used to control the k8's objects . 
+  1. cloud controller :  
+  2. cube controller : 
+
+Worker Node : 
+===========
+kubelet : its an agent to communicate with the master  . 
+kubeproxy : it is used to deal with network 
+POD : group of containers 
+
+
+MINIKUBE :
+
+it is used to setup single node cluster on k8's 
+
+MINIKUBE REQUIREMENTS :
+********************
+2 cpu 
+2gb RAM 
+20 gb space 
+internet connection 
+container or virtual machine manager like docker 
+
+
+
 
