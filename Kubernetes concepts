@@ -46,5 +46,35 @@ internet connection
 container or virtual machine manager like docker 
 
 
+PRACTICAL :
+we have taken one ubuntu server on aws 
+
+Update server :
+************
+1. apt update -y 
+2. apt upgrade -y 
+
+Install Docker :
+*************
+
+sudo apt install curl wget apt-transport-https -y 
+sudo curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh 
+
+INSTALL MINIKUBE:
+***************
+
+5 sudo curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+6 sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+7 sudo chmod +x /usr/local/bin/minikube
+8 sudo minikube version
+
+
+
+sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+sha256sum --check kubectl.sha256
+
+
 
 
